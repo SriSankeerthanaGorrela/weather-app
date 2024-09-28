@@ -58,3 +58,42 @@
     width: 50px; /* Further reduced icon size */
     height: 50px;
 }
+/* Mobile Styles */
+@media (max-width: 480px) {
+  .weather-weekly {
+    padding: 10px; /* Adjust padding for mobile */
+  }
+
+  .weekly-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column; /* Keep items in a row for scrolling */
+    overflow-x: auto; /* Enable horizontal scrolling */
+    gap: 20px; /* Space between cards */
+    padding: 10px 0; /* Padding for the top and bottom */
+    /* Enable snap scrolling */
+    scrollbar-width: thin; /* For Firefox to style the scrollbar */
+    width: 100%; /* Ensure the container takes full width */
+  }
+
+  .daily-forecast {
+    flex: 0 0 auto; /* Prevent flex items from shrinking */
+    width: 120px; /* Set a width for each card */
+    margin-right: 10px; /* Space between cards */
+    /* Align each card at the start */
+  }
+
+  /* Optional: Customize scrollbar for WebKit browsers */
+  .weekly-container::-webkit-scrollbar {
+    height: 8px; /* Height of the scrollbar */
+  }
+
+  .weekly-container::-webkit-scrollbar-thumb {
+    background: #ccc; /* Color of the scrollbar thumb */
+    border-radius: 10px; /* Round edges of the scrollbar thumb */
+  }
+
+  .weekly-container::-webkit-scrollbar-track {
+    background: #f0f0f0; /* Color of the scrollbar track */
+  }
+}

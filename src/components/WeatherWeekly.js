@@ -10,7 +10,7 @@ const WeatherWeekly = ({ weeklyData,isMobile }) => {
       <div className="weekly-container">
         {weeklyData.map((day, index) => (
           <div key={index} className="daily-forecast" style={{
-            width: isMobile ? '90%' : '150px', // Adjust width for mobile
+            width: isMobile ? '100%' : '150px', // Adjust width for mobile
           }}>
             <p className="day">{day.day}</p>
             <p className="date">{day.date}</p> {/* Displaying the date */}

@@ -58,7 +58,7 @@ const App = () => {
       setWeeklyData(dailyForecast);
     } catch (error) {
       console.error('Error fetching weather data:', error);
-      setError('Failed to fetch weather data. Please check the city name or your API key.');
+      setError('Please check the city name .');
     } finally {
       setLoading(false); // Stop loading
     }
@@ -76,7 +76,7 @@ const App = () => {
   return (
     <div className="weather-app"
        style={{
-        height: '130vh', // Full viewport height
+        height: '228vh', // Full viewport height
         background: 'linear-gradient(180deg, #1C3F94 0%, #87CEFA 100%)', // Background gradient
         
         padding: '20px', // Optional: padding around content
