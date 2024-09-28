@@ -44,27 +44,29 @@
   }
   @media (max-width: 480px) {
     .search-bar {
+        margin-left: 75px;
       position: relative;
       top: 0;
       left: 0;
-      width: 100%;
+      background-color: transparent; /* Set background to transparent */
+      width: 50%;
       padding: 5px;
       flex-direction: column;
-      align-items: stretch;
+      align-items: center;
     }
   
     .search-bar input {
-      width: 100%;
+      width: 70%;
       border-radius: 15px;
       margin-bottom: 10px; /* Space between input and button */
     }
   
     .search-bar input:focus {
-      width: 100%; /* Full width on mobile focus */
+      width: 80%; /* Full width on mobile focus */
     }
   
     .search-bar button {
-      width: 100%;
+      width: 50%;
       padding: 10px;
       font-size: 16px;
       border-radius: 15px;
