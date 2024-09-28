@@ -1,0 +1,41 @@
+.weather-today {
+    display: flex; /* Use flexbox for centering */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+   /* Space above the card */
+    padding: 10px; /* Padding inside the card */
+    background-color: #003366; /* Dark blue background color */
+    color: #ffffff; /* White text color for contrast */
+    border-radius: 10px; /* Rounded corners for the card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    width: 300px; /* Fixed width for the card */
+    margin-left: 450px;
+    margin-top: 15px;
+   
+  }
+  
+  .weather-today h1 {
+    font-size: 1.8em; /* Larger font size for city name */
+    margin: 0; /* Remove default margin */
+  }
+  
+  .weather-today h2 {
+    font-size: 2.5em; /* Larger font size for temperature */
+    margin: 5px 0; /* Space around the temperature */
+  }
+  
+  .weather-today p {
+    font-size: 1.1em; /* Standard font size for other text */
+    margin: 5px 0; /* Space between paragraphs */
+  }
+  
+  /* Style for FontAwesome icons */
+  .weather-today .faCloudSun,
+  .weather-today .faWind,
+  .weather-today .faTint {
+    margin-right: 5px; /* Space between icon and text */
+    height: 30px;
+    width:30px
+  }
+  
