@@ -76,7 +76,8 @@ const App = () => {
   return (
     <div className="weather-app"
        style={{
-        height: '228vh', // Full viewport height
+        height: isMobile ? '230vh' : '130vh', // Different height for mobile and desktop
+        // height: '130vh', // Full viewport height
         background: 'linear-gradient(180deg, #1C3F94 0%, #87CEFA 100%)', // Background gradient
         
         padding: '20px', // Optional: padding around content
